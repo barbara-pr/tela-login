@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* Estilo para telas pequenas/celular = Mobile First */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 15px;
+}
+
+form > p{
+    padding: 10px;
+    text-align: justify;
+}
+
+   /* background-size: cover;
+    display: block;
+    margin: auto;
+    border-radius: 20px; */
+
+#imagem{
+    background-color: rgb(167, 44, 3);
+    background-image: url(../imagem/logiin.jpg);
+    background-size: cover;
+    height: 150px;
+    display: block;
+}
+
+.material-icons{
+    flex-direction: row;
+    color: white;
+    font-size: 2em;
+    width: 40px;
+}
+
+.campo{
+    background-color: #3f3529;
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(41, 41, 41);
+    margin-top: 5px; 
+    margin-left: 10px;
+    position: static;
+/* Só consegui centralizar o input com essas configurações: */
+    /* position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+} 
+
+.campo2{
+    background-color: #3f3529;
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(41, 41, 41);
+    position: static;
+    margin-top: 5px;
+    margin-left: 10px;
+    /* position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+label{
+    display: none;
+}
+
+.campo input{
+    border-radius: 3px;
+    position: fixed;
+    padding: 8px 0px;
+}
+
+.campo2 input{
+    border-radius: 3px;
+    position: fixed;
+    padding: 8px 0px;
+}
+
+.campo input:focus{
+    background: #eee3d6;
+    color: black;
+}
+
+.campo2 input:focus{
+    background: #eee3d6;
+    color: black;
+}
+
+#entrar{
+    padding: 7px;
+    width: 50%;
+    background: #af5f02;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#esqueci{
+    padding: 4px;
+    width: 50%;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#entrar:hover{
+    background: #eeb471d5;
+    color: black;
+    cursor: pointer;
+}
+
+#esqueci:hover{
+    background: #eeb471d5;
+    color: black;
+    cursor: pointer;
+}  
+
+main{
+    min-width: 45vw;
+    max-width: 50vw;
+    max-height: 100vh;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    background-color: rgb(250, 246, 246);
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.63);
+    overflow: hidden;
+    transform: translate(5%, 10%);
+}
+
+body, html{
+    background-color: rgb(110, 32, 7);
+    width: 100vw;
+    height: 100vh;
+}
